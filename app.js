@@ -3,10 +3,13 @@ const inpt_totalAmount = document.querySelector('#totalAmount');
 const inpt_monthlyAmount = document.querySelector('#monthlyAmount');
 const span_yearCount = document.querySelector('#yearCount');
 const inpt_year = document.querySelector('#year');
-
+const span_percentCount = document.querySelector('#percentCount');
 
 inpt_year.addEventListener('input', () => {
-  span_yearCount.innerText = inpt_year.value;
+  const year = inpt_year.value
+  span_yearCount.innerText = year;
+
+  span_percentCount.innerText = (12+year/3).toFixed(1)
 });
 
 
