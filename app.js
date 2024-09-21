@@ -8,6 +8,6 @@ inpt_amount.addEventListener('input', () => {
   const percent = 14
 
   const result = amount + amount * (percent / 100)
-  inpt_totalAmount.value = result
-
+  inpt_totalAmount.value = result.toFixed(2)
+  inpt_monthlyAmount.value = (result/12).toFixed(2)
 })
