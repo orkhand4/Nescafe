@@ -14,10 +14,13 @@
 
   <section id="calculator-wrapper">
     <div>
-      <label for="amount">Meblegi daxil edin:</label>
-      <input id="amount" type="number" placeholder="Mebleg">
-      <p>Kredit illik verilir!</p> 
-      <p>Faiz: <span>14%</span></p>
+      <label for="amount">Məbləğib daxil edin:</label>
+      <input id="amount" type="number" placeholder="Məbləğ">
+
+      <label for="year">Kredit müddətini <span id="yearCount">1</span> il</label>
+      <input style="padding: 0;" id="year" type="range" min="1" max="25" step="1" value="1">
+      
+      <p>Faiz: <span>0%</span></p>
     </div>
     <div>
       <label for="totalAmount">Ümumi geri alınacaq məbləğ:</label>
